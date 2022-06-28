@@ -1,0 +1,83 @@
+<!-- <meta charset="UTF-8">
+
+<script>
+    function pulaLinha(){
+        document.write("<br><br>");
+    }
+    function mostra(calculo){
+        document.write(calculo);
+        pulaLinha();
+    }
+    var pesoKg = 73;
+    var altura = 1.71
+    var calculoImc = pesoKg/(altura*altura);
+
+    mostra("O calculo do IMC de Regina é " + Math.round(calculoImc));
+</script>
+
+<br><br>
+
+nova função;
+
+<script>
+     function pulaLinha(){
+        document.write("<br><br>");
+    }
+    function mostra(calculo){
+        pulaLinha();
+        document.write(calculo);
+        
+    }
+
+    function calculoImc(peso, altura){
+
+        var calculoDoImc = peso / (altura*altura);
+        mostra("O calculo do IMC é " + Math.round(calculoDoImc));
+    } 
+    calculoImc(73, 1.71);
+    calculoImc( 100, 1.40);
+
+</script> -->
+
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso) {
+
+        var imc = peso / (altura * altura);
+        return imc;
+    }
+    var nome = prompt("Informe seu nome");
+    var altura = prompt("informe sua altura");
+    var peso = prompt ("Informe seu peso");
+
+    var imcCalculado = calculaImc(altura, peso);
+    mostra(nome+ " o seu IMC é : " +  Math.round(imcCalculado));
+
+    if (imcCalculado < 18.5){
+        mostra("Você está abaixo do peso");
+    }  
+    
+    // if (imcCalculado >=18){
+    //     if (imcCalculado <=35)
+    //     mostra("Você está com peso ideal");
+    // }
+    if (imcCalculado >=18.5 && imcCalculado <=35){
+        mostra("Você está com peso ideal");
+    }
+    
+    if (imcCalculado >35 ){
+        mostra("Você está com sobrepeso");
+    };
+
+
+</script> 
+

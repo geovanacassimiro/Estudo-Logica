@@ -1,0 +1,58 @@
+<meta charset="UTF-8">
+<!-- <script>
+    function pulaLinha() {
+       document.write("<br>")
+    }
+    function mostra(){
+        var minhaIdade = 18;
+        var idadeJeh = 30;
+        var resultado = idadeJeh-minhaIdade;
+        document.write("A diferença de idade entre mim e a jeh é de " + resultado);
+
+    }
+
+    pulaLinha();
+    mostra();
+</script> -->
+<br>
+
+<script>
+    function pulaLinha() {
+       document.write("<br>")
+    }
+    function mostra(frase){
+      document.write(frase);
+      pulaLinha();
+    }
+    var passado = 1500;
+    var anoAtual = 2022;
+    var media = 28;
+    var calculoDeGeracoes = (anoAtual-passado)/media;
+
+
+    pulaLinha();
+    mostra(calculoDeGeracoes);
+</script>
+
+alura code:
+
+<meta charset="UTF-8">
+
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+        }
+
+        function mostra(frase) {
+            pulaLinha();
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var idadeMediaQuandoTemFilhos = 28;
+        var anoAtual = 2016; 
+
+        var quantidadeDeGeracoes = (anoAtual - 1500) / idadeMediaQuandoTemFilhos;
+
+        mostra(quantidadeDeGeracoes);
+    </script>
