@@ -1,0 +1,22 @@
+<!-- Versão 2.0 do jogo de advinha, usando HTML e script e adicionando botão -->
+<!DOCTYPE html>
+<meta charset="utf-8">
+    <title>Jogo</title>
+    <h1>Jogo de Advinha 2.0</h1>
+    <input/>
+    <button>Compare o Número</button>
+
+<script>
+     var segredo = 5;
+     var input = document.querySelector("input"); //querySelector pega as informações da tag input para usar no script
+    
+     function verifica(){
+     if (input.value == segredo){
+        alert("Você acertou!");
+    } else{
+        alert("Você errou!")
+    }
+}
+var button = document.querySelector("button");
+button.onclick = verifica;
+</script>
