@@ -3,20 +3,24 @@
 <meta charset="utf-8">
     <title>Jogo</title>
     <h1>Jogo de Advinha 2.0</h1>
+    <p>Tente advinhar qual número de 1 a 10 que o computador escolheu!</p>
     <input/>
     <button>Compare o Número</button>
-
+   
 <script>
-     var segredo = 5;
+     var segredo = Math.round(Math.random()*10);
      var input = document.querySelector("input"); //querySelector pega as informações da tag input para usar no script
-    
+    input.focus();
+
      function verifica(){
      if (input.value == segredo){
         alert("Você acertou!");
     } else{
         alert("Você errou!")
     }
+    input.value = "";// isso serve para "limpar" o número digitado do campo
+    input.focus(); //highlight no campo de digitação, um recurso de usabilidade
 }
 var button = document.querySelector("button");
-button.onclick = verifica;
+button.onclick = verifica; //a função ficou sem paramentro 
 </script>
