@@ -3,4 +3,5 @@
 
 Estudo sobre lógica da programação com o professor da Alura Flavio Henrique de Souza Almeida   
 
+Usando HTML e JavaScript
 
